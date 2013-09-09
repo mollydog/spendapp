@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-PIGH::Application.config.secret_token = 'e00e379a03910b88725e0e52cd20929d445cf6db7c272480e0cffaef20f70420f654607cebf87a1a8efc6cb0c2708c458f5f1d19d7976286adf7fbc39d875281'
+PIGH::Application.config.secret_token = '3d4af5bd43323d6614840f7b9f26731372f489f54c5d44ba9e6e25c9a36aa6d940db658f90a778ea41338d972d1874f3552094d7e1dc326aa5abe569c6287d0b'
