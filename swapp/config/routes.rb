@@ -1,10 +1,4 @@
-PIGH::Application.routes.draw do
-  root:to => 'pages#home'
-  get 'about' => 'pages#about'
-  get 'providers' => 'pages#providers'
-  get 'services' => 'pages#services'
-  get 'employers' => 'pages#employers'
-
+Swapp::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
