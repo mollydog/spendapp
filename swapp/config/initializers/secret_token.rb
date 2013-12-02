@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Swapp::Application.config.secret_token = 'fdec3f8bbeb1b1d5bd492d74c92d0fd1b169df33aa0883ad54e078debb3a6b3b31927c29744e129225ef05d947e9d6b6acc6678fb58b6f554fd5b10d5b7f2327'
+Swapp::Application.config.secret_token = 'db0df0e1488938e15355a78481f5acc58839e34f48ffb34c5ab31d16d693316cf7c201a2ccfd2dd0dedb3438a994506fe6375429e072789a7d30824b3b70af51'
