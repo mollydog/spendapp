@@ -9,7 +9,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Swapp
+module Spendapp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -58,9 +58,5 @@ module Swapp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-
-    #If you are deploying Rails 3.1+ on Heroku, you may want to set
-    #Required to use devise on Heroku
-    config.assets.initialize_on_precompile = false
   end
 end
