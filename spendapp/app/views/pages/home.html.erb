@@ -1,8 +1,12 @@
 <div class="jumbotron">
   <h1 align="center">Spendworthy</h1>
-  <p align="center">It's time to decide if that trinket is worth your money.</p>
-  <h2 align="center">Is it <em> spendworthy? </em></h4>
-  <p align="center"><%= link_to "Sign Me Up", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+	<% if user_signed_in? %>
+		<p align="center"><%= link_to "Let's get started!", memberhome_path %></p>
+	<% else %>
+	  <p align="center">It's time to decide if that trinket is worth your money.</p>
+	  <h2 align="center">Is it <em> spendworthy? </em></h4>
+	  <p align="center"><%= link_to "Sign Me Up", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+	 <% end %>
 </div>
 
 
