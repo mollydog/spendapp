@@ -1,4 +1,6 @@
 Spendapp::Application.routes.draw do
+  resources :models do as_routes end
+
   devise_for :users
 
   root :to=> 'pages#home'
