@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @sproject.name %>
+</p>
+
+<p>
+  <b>Budget:</b>
+  <%= @sproject.budget %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @sproject.date %>
+</p>
+
+<p>
+  <b>Spend:</b>
+  <%= @sproject.spend %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @sproject.note %>
+</p>
+
+<p>
+  <b>Amtremaining:</b>
+  <%= @sproject.amtremaining %>
+</p>
+
+
+<%= link_to 'Edit', edit_sproject_path(@sproject) %> |
+<%= link_to 'Back', sprojects_path %>

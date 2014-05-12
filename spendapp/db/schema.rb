@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140403013038) do
+ActiveRecord::Schema.define(:version => 20140512002902) do
 
   create_table "models", :force => true do |t|
     t.string   "project"
@@ -23,6 +23,31 @@ ActiveRecord::Schema.define(:version => 20140403013038) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.decimal  "budget"
+    t.datetime "date"
+    t.decimal  "spend"
+    t.text     "note"
+    t.decimal  "amtremaining"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "sprojects", :force => true do |t|
+    t.string   "name"
+    t.decimal  "budget"
+    t.date     "date"
+    t.decimal  "spend"
+    t.string   "note"
+    t.decimal  "amtremaining"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "user_id"
+  end
+
+  add_index "sprojects", ["user_id"], :name => "index_sprojects_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

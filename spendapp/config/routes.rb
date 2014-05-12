@@ -1,7 +1,13 @@
 Spendapp::Application.routes.draw do
-  resources :models do as_routes end
+  resources :sprojects
 
-  devise_for :users
+
+  resources :projects do as_routes 
+end
+  devise_for :users do
+end
+
+ 
 
   root :to=> 'pages#home'
   get 'memberhome' => 'pages#memberhome'

@@ -1,3 +1,11 @@
 <html>
-	<h1>Test</h1>
+<p>Welcome <%= @email %>!</p>
+
+<% if new_existing_projects? %>
+	<p>Let's set up that bucket o' cash!</p>
+
+	<p><%= link_to 'Set it up', projectssetup_path %> %></p>
+<% else %>
+
+<%end%>
 </html>
